@@ -36,13 +36,4 @@ Utiliza nuestro buscador para encontrar rápidamente la película que estás bus
 
 Este proyecto de página web tiene como objetivo proporcionar a los usuarios una experiencia informativa y agradable al explorar las películas de Disney. Con un diseño intuitivo y funciones útiles como el buscador y la capacidad de registro, esperamos que esta página sea útil tanto para aficionados como para investigadores de cine.
 
-## Contacto
 
-Para más información o para cualquier consulta, no dudes en ponerte en contacto con nosotros:
-
-- Maribel Chura
-- Claudia Tapia
-- Rocio Vargas
-- Jimena Turpo
-
-¡Disfruta explorando nuestro catálogo de películas de Disney!
