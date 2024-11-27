@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/extras.css">
+    <? php include 'index.php'; ?>
+</head>
+
+<body>
+    <div style="display: flex; justify-content: flex-end;">
+        <button class="BtnLogout" onclick="logout()">
+            <div class="sign">
+                <svg viewBox="0 0 512 512">
+                    <path
+                        d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z">
+                    </path>
+                </svg>
+            </div>
+            <div class="text">Salir</div>
+        </button>
+    </div>
+
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active c-item">
+                <img src="assets/img/castle.jpg" class="d-block w-100 c-img"
+                    style="object-fit: cover; object-position: bottom;" alt="Slide 1">
+                <div class="carousel-caption top-0 mt-4" style="padding-top: 100px;">
+                    <p class="display-1 fw-bolder text-capitalize walto" style="font-size: 7.5rem; text-align: center;">Disney</p>
+                    <p class="text-uppercase fs-3 mt-5" style="font-size: 0.5rem; text-align: center;">Desde su
+                        fundación en 1923, Disney ha creado un universo lleno de magia y aventuras que ha cautivado a
+                        generaciones. Sus historias no solo entretienen, sino que también enseñan valores como la
+                        amistad, la valentía y la importancia de los sueños.</p>
+                </div>
+            </div>
+            <div class="carousel-item c-item">
+                <img src="https://images2.alphacoders.com/133/thumb-1920-1338853.png" class="d-block w-100 c-img"
+                    alt="Slide 2">
+                <div class="carousel-caption top-0 mt-4">
+                    <p class="display-1 fw-bolder text-capitalize">Los Éxitos en Taquilla de Disney</p>
+                    <p class="text-uppercase fs-3 mt-5">Disney ha revolucionado el cine familiar con éxitos icónicos
+                        como El Rey León (1994), que recaudó más de $1.6 mil millones, y Frozen, que superó los $1.28
+                        mil millones y popularizó "Let It Go". Estas películas han logrado un gran éxito comercial y han
+                        dejado una huella en millones de fans en todo el mundo.</p>
+                </div>
+            </div>
+            <div class="carousel-item c-item">
+                <img src="https://images4.alphacoders.com/134/1341610.png" class="d-block w-100 c-img" alt="Slide 3">
+                <div class="carousel-caption campana top-0 mt-4">
+                    <p class="display-1 fw-bolder text-capitalize" style="font-size: 3.5rem; text-align: center;">Un
+                        Icono que Trasciende Generaciones</p>
+                    <p class="text-uppercase fs-3 mt-5" style="font-size: 1rem; text-align: center;">Mickey Mouse hizo
+                        su debut en *Steamboat Willie* el 18 de noviembre de 1928, revolucionando la animación.
+                        Originalmente llamado "Morty", su nombre cambió gracias a Walt Disney. ¡Y no olvidemos que tiene
+                        su propia estrella en el Paseo de la Fama desde 1978, celebrando más de 90 años de magia!</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div style="display: flex; justify-content: center;">
+        <button onclick="ShowCards()" class="custom-btn btn btn-5">Peliculas...</button>
+    </div>
+    <script src="assets/js/script.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

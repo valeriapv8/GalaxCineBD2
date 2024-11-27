@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PELICULAS DE DISNEY</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/card.css">
+  <link rel="stylesheet" href="assets/css/extras.css">
+
+  <? php include 'index.php'; ?>
+</head>
+
+<body class="bodyOtro">
+  <div class="containerOtro">
+    <div class="row">
+      <div class="col-md-10">
+        <h1>PELICULAS DE DISNEY</h1>
+      </div>
+      <div class="col-md-2" style="display: flex; justify-content: flex-end;">
+        <button class="BtnLogout" onclick="logout()">
+          <div class="sign">
+            <svg viewBox="0 0 512 512">
+              <path
+                d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z">
+              </path>
+            </svg>
+          </div>
+          <div class="text">Salir</div>
+        </button>
+      </div>
+    </div>
+
+    <div class=row>
+      <div class="col-md-6">
+
+      </div>
+      <div class="col-md-6" style="display: flex; justify-content: flex-end;">
+        <div class="btn-group">
+          <button id="calc_all" class="btnCalc">
+            <span class="spanCalc">
+              Todo
+            </span>
+          </button>
+          <button id="calc_anio" class="btnCalc">
+            <span class="spanCalc">
+              Estrenos > 2000
+            </span>
+          </button>
+          <button id="calc_min" class="btnCalc">
+            <span class="spanCalc">
+              Duración > 90 min
+            </span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 inpu-group">
+        <input type="text" class="form-control" id="buscar" placeholder="Buscar pelicula...">
+      </div>
+      <div class="btn-group col-md-6" style="display: flex; justify-content: flex-end;">
+        <button id="calc_rexito" class="btnCalc">
+          <span class="spanCalc">
+            Éxito de taquilla
+          </span>
+        </button>
+        <button id="calc_rmedio" class="btnCalc">
+          <span class="spanCalc">
+            Éxito moderado
+          </span>
+        </button>
+        <button id="calc_rfracaso" class="btnCalc">
+          <span class="spanCalc">
+            Fracaso en taquilla
+          </span>
+        </button>
+
+        <button id="verFavoritos" class="btnCalc">
+          <span class="spanCalc">
+            Mis Favoritos
+          </span>
+        </button>
+
+      </div>
+
+    </div>
+    <div class="" style="padding-top: 40px;">
+      <div class="row" id="characters-container"></div>
+    </div>
+  </div>
+
+  <script src="assets/js/peliculas.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

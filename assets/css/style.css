@@ -1,0 +1,81 @@
+/* Importar la fuente usando @font-face */
+@font-face {
+  font-family: 'Waltograph';
+  src: url('../font/waltograph42.otf') format('truetype');
+}
+
+.bodyOtro {
+  font-family: 'Waltograph', cursive;
+  font-size: 25px;
+  /* Tamaño grande para encabezados */
+  font-weight: normal;
+  background-image: url("../img/background.jpg");
+  background-color: #3e4dbb;
+  color: #1e4bd2;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.walto {
+  font-family: 'Waltograph', cursive;
+}
+
+.formContainer {
+  opacity: 0.8;
+}
+
+.containerOtro {
+  background-color: #b2d3f5;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgb(24, 28, 37, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 70px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #378eeb;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#registerMessage,
+#loginMessage {
+  margin-top: 10px;
+  color: red;
+}

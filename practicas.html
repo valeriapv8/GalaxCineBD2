@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Select2 Autocompletado</title>
+    <!-- Incluir CSS de Select2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <!-- Incluir jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Incluir JS de Select2 -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+</head>
+<body>
+    <form action="your_action_page.php" method="post">
+        <div class="form-group">
+            <label for="slc_producto">Elige un producto:</label>
+            <select name="slc_producto" id="slc_producto" class="form-control" style="width:290px" required>
+                <option value="" disabled selected>Seleccionar producto</option>
+                <?php
+                // Ejemplo de datos de productos
+                $productos = [
+                    (object) ['productid' => 1, 'pdt_productname' => 'Producto A'],
+                    (object) ['productid' => 2, 'pdt_productname' => 'Producto B'],
+                    (object) ['productid' => 3, 'pdt_productname' => 'Producto C'],
+                    // Añade más productos según sea necesario
+                ];
+                for ($i = 0; $i < count($productos); $i++) { ?>
+                    <option value="<?= $productos[$i]->productid ?>"><?= $productos[$i]->pdt_productname ?></option>
+                <?php } ?>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+
+    <script>
+        $(document).ready(function() {
+            $('#slc_producto').select2({
+                placeholder: 'Seleccionar producto',
+                allowClear: true
+            });
+        });
+    </script>
+</body>
+</html>
