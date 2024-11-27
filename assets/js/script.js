@@ -48,8 +48,10 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 });
 
 function showRegister() {
-    document.getElementById('registerFormContainer').style.display = 'block';
-    document.getElementById('loginFormContainer').style.display = 'none';
+    document.getElementById("selectionSection").style.display = "none";
+    document.getElementById("loginSection").style.display = "block";
+    document.getElementById("registerFormContainer").style.display = "block";
+    document.getElementById("loginFormContainer").style.display = "none";
 }
 
 function showLoginSection() {
@@ -71,8 +73,10 @@ function showMainContent() {
 }
 
 function showLogin() {
-    document.getElementById('registerFormContainer').style.display = 'none';
-    document.getElementById('loginFormContainer').style.display = 'block';
+    document.getElementById("selectionSection").style.display = "none";
+    document.getElementById("loginSection").style.display = "block";
+    document.getElementById("loginFormContainer").style.display = "block";
+    document.getElementById("registerFormContainer").style.display = "none";
 }
 
 function logout() {

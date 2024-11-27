@@ -4,49 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro y Login</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo_GC.png">
+    <title>GalaxCine - Registro y Login</title>
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
 <body class="bodyOtro">
-    <div class="containerOtro formContainer" id="loginSection">
-        <div id="registerFormContainer">
-            <h2>Registro</h2>
-            <form id="registerForm">
-                <div class="input-group">
-                    <label for="registerUsername">Usuario:</label>
-                    <input type="text" id="registerUsername" required>
-                </div>
-                <div class="input-group">
-                    <label for="registerPassword">Contraseña:</label>
-                    <input type="password" id="registerPassword" required>
-                </div>
-                <button type="submit">REGISTRAR</button>
-            </form>
-            <p id="registerMessage"></p>
-            <p>¿Ya tienes una cuenta? <a href="#" onclick="showLogin()">Inicia Sesión</a></p>
-        </div>
-
-        <div class="form-container" id="loginFormContainer" style="display: none;">
-            <h1>Iniciar Sesión</h1>
-            <form id="loginForm">
-                <div class="input-group">
-                    <label for="loginUsername">Usuario:</label>
-                    <input type="text" id="loginUsername" required>
-                </div>
-                <div class="input-group">
-                    <label for="loginPassword">Contraseña:</label>
-                    <input type="password" id="loginPassword" required>
-                </div>
-                <button type="submit">INGRESAR</button>
-            </form>
-            <p id="loginMessage"></p>
-            <p>¿No tienes una cuenta? <a href="#" onclick="showRegister()">Regístrate</a></p>
-        </div>
+<div class="formContainer" id="selectionSection">
+    <!-- Logo -->
+    <div class="logo-container">
+        <img src="assets/img/logo_GC.png" alt="Logo GalaxCine" class="logo">
+        <span class="logo-text">GalaxCine</span>
     </div>
 
-    <script src="assets/js/script.js"></script>
-</body>
+    <!-- Texto de bienvenida -->
+    <h2>Bienvenido a GalaxCine</h2>
+    <p>Explore nuestro amplio catálogo de películas y disfrute de una experiencia cinematográfica inolvidable.</p>
 
-</html>
+    <!-- Botones -->
+    <div class="button-group">
+        <button onclick="showRegister()">REGISTRARSE</button>
+        <button onclick="showLogin()">INICIAR SESIÓN</button>
+    </div>
+</div>
+
+
+<div class="containerOtro formContainer" id="loginSection" style="display: none;">
+    <div id="registerFormContainer">
+        <h2>REGISTRO</h2>
+        <form id="registerForm">
+            <div class="input-group">
+                <label for="registerUsername">Usuario:</label>
+                <input type="text" id="registerUsername" required>
+            </div>
+            <div class="input-group">
+                <label for="registerPassword">Contraseña:</label>
+                <input type="password" id="registerPassword" required>
+            </div>
+            <button type="submit">REGISTRAR</button>
+        </form>
+        <p id="registerMessage"></p>
+        <p class="option-login">¿Ya tienes una cuenta? <a href="#" onclick="showLogin()">Inicia Sesión</a></p>
+    </div>
+
+    <div class="form-container" id="loginFormContainer" style="display: none;">
+        <h2>INICIAR SESIÓN</h2>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="loginUsername">Usuario:</label>
+                <input type="text" id="loginUsername" required>
+            </div>
+            <div class="input-group">
+                <label for="loginPassword">Contraseña:</label>
+                <input type="password" id="loginPassword" required>
+            </div>
+            <button type="submit">INGRESAR</button>
+        </form>
+        <p id="loginMessage"></p>
+        <p class="option-login">¿No tienes una cuenta? <a href="#" onclick="showRegister()">Regístrate</a></p>
+    </div>
+</div>
+
+<script src="assets/js/script.js"></script>
+</body>

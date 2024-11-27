@@ -1,17 +1,13 @@
-/* Importar la fuente usando @font-face */
-@font-face {
-  font-family: 'Waltograph';
-  src: url('../font/waltograph42.otf') format('truetype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Maven+Pro:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 .bodyOtro {
-  font-family: 'Waltograph', cursive;
+  font-family: "Open Sans", sans-serif;
   font-size: 25px;
   /* Tamaño grande para encabezados */
   font-weight: normal;
-  background-image: url("../img/background.jpg");
-  background-color: #3e4dbb;
-  color: #1e4bd2;
+  background-image: url("../img/fondo.gif");
+  background-color: #ffacec;
+  color: #ffffff;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -21,27 +17,23 @@
   margin: 0;
 }
 
-.walto {
-  font-family: 'Waltograph', cursive;
-}
-
 .formContainer {
   opacity: 0.8;
 }
 
 .containerOtro {
-  background-color: #b2d3f5;
+  background-color: #636363;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 0 10px rgb(24, 28, 37, 0.1);
-  width: 400px;
+  width: 600px;
   text-align: center;
 }
 
 h2 {
   padding: 0;
-  margin: 0;
-  font-size: 70px;
+  margin: 10px;
+  font-size: 60px;
 }
 
 .input-group {
@@ -61,13 +53,15 @@ h2 {
 }
 
 button {
-  background-color: #378eeb;
+  background-color: #e51d8d;
   color: white;
   border: none;
   padding: 10px;
   border-radius: 12px;
   cursor: pointer;
   width: 100%;
+  margin: 15px 0;
+  font-size: 20px;
 }
 
 button:hover {
@@ -79,3 +73,77 @@ button:hover {
   margin-top: 10px;
   color: red;
 }
+
+
+/*          Apartado de la ventana de opciones              */
+/* Estilos para la ventana de selección */
+#selectionSection {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+#selectionSection h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+#selectionSection p {
+  font-size: 20px;
+  margin-bottom: 2rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.button-group button {
+  min-width: 150px; /* Ajusta este valor para evitar que el texto se rompa */
+  white-space: nowrap; /* Evita que el texto se divida en líneas */
+  background-color: #ff007f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 0 30px 0 0;
+  padding: 20px 40px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-group button:hover {
+  background-color: #e60072;
+}
+
+/* Contenedor del logo y texto */
+.logo-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  margin: 50px 0 0 -400px; /* Mantiene las configuraciones existentes */
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Espacio entre el logo y el texto */
+}
+
+.logo {
+  width: 70px; /* Tamaño del logo según tu configuración */
+}
+
+.logo-text {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8); /* Sombra para visibilidad */
+  white-space: nowrap; /* Evita que el texto salte de línea */
+}
+
+
+
